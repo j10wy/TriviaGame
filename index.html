@@ -3,30 +3,68 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-	<!-- Latest compiled and minified CSS -->
-	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-		crossorigin="anonymous"> -->
+	<!-- Bootstrap compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+		crossorigin="anonymous">
 
-	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
 
 	<!-- jQuery Core 3.2.1 -->
-	<!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-		crossorigin="anonymous"></script> -->
-		
-		<script src="bootstrap/js/jquery-3.2.1.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+		crossorigin="anonymous"></script>
 
-	<title>Document</title>
+	<title>Giant Trivia</title>
 </head>
 
 <body>
-	<!-- Latest compiled and minified JavaScript -->
-	<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-		crossorigin="anonymous"></script> -->
 
-	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<div class="container">
+		<div class="jumbotron">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<img src="assets/images/giants-logo.png" class="logo" alt="Giants logo">
+						<h2>Trivia</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row question-area">
+			<div class="col-md-12 clock">
+				<h3 class="time"><span>Time Remaining</span>: <span id="clock"></span> seconds</h3>
+			</div>
+			<div class="col-md-12 question">
+				<h3 id="question"></h3>
+			</div>
+			<div class="col-md-12 status">
+				<h3 id="status"></h3>
+				<img src="">
+			</div>
+			<div class="col-md-12 scoreboard">
+				<!-- <h3 id="question"></h3> -->
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="list-group" id="options">
+
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 col-xs-offset-5">
+				<button class="btn btn-default play-ball" type="submit">Play Ball! &#9918;</button>
+
+				<button class="btn btn-default reset" type="submit">Reset</button>
+			</div>
+		</div>
+	</div>
+
+	<script src="assets/js/trivia.js"></script>
 </body>
 
 </html>

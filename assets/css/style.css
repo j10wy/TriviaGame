@@ -1,0 +1,86 @@
+/* ----- HTML Elements ----- */
+
+:root {
+	--orange: #fd4316;
+}
+
+html {
+	background-color: #fd4316;
+}
+
+body {
+	background: transparent;
+}
+
+
+/* ----- Jumbotron ----- */
+
+div.jumbotron {
+	background: transparent;
+	color: white;
+	text-transform: uppercase;
+}
+
+div.jumbotron img.logo {
+	width: 300px;
+	height: auto;
+}
+
+div.jumbotron div.container {
+	text-align: center;
+}
+
+
+/* ----- Question Area ----- */
+
+div.row.question-area {
+	background-color: #212121;
+	background-image: -webkit-linear-gradient(135deg, #212121 0%, #000000 50%, #323232 100%);
+	background-image: -moz-linear-gradient(135deg, #212121 0%, #000000 50%, #323232 100%);
+	background-image: -o-linear-gradient(135deg, #212121 0%, #000000 50%, #323232 100%);
+	background-image: linear-gradient(135deg, #212121 0%, #000000 50%, #323232 100%);
+	border: 1px solid black;
+	border-radius: 4px;
+	padding: 25px;
+	margin: 25px 0;
+}
+
+div.row.question-area h3 {
+	color: var(--orange);
+}
+
+div.row.question-area h3#status, div.row.question-area h3#question {
+	color:white;
+}
+div.row.question-area div.status {
+	text-align: center;
+}
+/* ----- List group ----- */
+
+a.list-group-item.active {
+	background: black;
+	border: 1px solid black;
+}
+
+a.list-group-item.active:hover {
+	background: black;
+	border: 1px solid black;
+	color: var(--orange);
+}
+
+
+/* ----- Button ----- */
+
+button.btn-default  {
+	background-color: black;
+	border: 1px solid white;
+	color: var(--orange);
+	font-size:24px;
+}
+
+button.btn-default:hover {
+	background-color: black;
+	border: 1px solid white;
+	color: white;
+	border-color: darkorange;
+}
